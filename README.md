@@ -11,5 +11,5 @@ segmentation-models
 Keras 2.3.1
 Torch 1.8
 Tensorflow 2.4
-sklearn
+scikit-learn
  

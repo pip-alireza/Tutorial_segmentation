@@ -5,9 +5,9 @@ import glob
 import albumentations as A
 
 
-num_of_images= 12000
+num_of_images= 100
 
-path = "datasetF"
+path = "data"
 folder = "augmented data"
 images = []
 masks = []

@@ -10,7 +10,7 @@ BACKBONE = 'resnet34'
 preprocess_input = sm.get_preprocessing(BACKBONE)
 
 
-path = "/test_data"
+path = "/data"
 # careful. it may give incompatible shape error using different shapes
 X_pixel = 512
 Y_pixel = 512

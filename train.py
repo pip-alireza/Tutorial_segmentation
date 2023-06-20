@@ -18,7 +18,7 @@ Y_pixel = 512
 train_img = []
 train_msk = []
 
-for im in sorted(glob.glob(path + '/*img.png')):
+for im in sorted(glob.glob(path + '/*img.png')): # update this line if your images contain different naming
     image = cv2.imread(im, cv2.IMREAD_COLOR)
     # image = cv2.resize(image, (X_pixel, Y_pixel))
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -27,7 +27,7 @@ for im in sorted(glob.glob(path + '/*img.png')):
 train_images = np.array(train_img)
 
 
-for msk in sorted(glob.glob(path + '/*mask.png')):
+for msk in sorted(glob.glob(path + '/*mask.png')): # update this line if your masks contain different naming
     mask = cv2.imread(msk, cv2.IMREAD_COLOR)
     mask[mask > 0] = 255 # this turns the image to B&W
     mask = mask/255 # this is necessary for iou since we want the value be btw 0 and 1
